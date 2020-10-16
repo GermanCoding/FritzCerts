@@ -40,7 +40,8 @@ If you do not use Maven:
 FritzCerts requires [Apache HttpClients](https://hc.apache.org/httpcomponents-client-ga/index.html) as well as [Apache HttpMime](https://hc.apache.org/httpcomponents-client-ga/httpmime/summary.html) in a recent version and Java 7 or higher to compile.
 
 # Download
-A precompiled version of this program is currently not available, but I'm working on it.
+You can download an up to date pre-compiled version of this program here (Compiled with Java 8):
+https://build.germancoding.com/job/FritzCerts/lastSuccessfulBuild/artifact/target/FritzCerts-0.0.1-SNAPSHOT.jar
 
 # Additional notes
 The program is not fully finished at the moment. There's no pretty status printing yet, instead full HTML pages are printed to the console. Additionally, password protected files should be supported and some other improvements are planed too.
