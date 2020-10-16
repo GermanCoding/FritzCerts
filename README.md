@@ -41,7 +41,7 @@ FritzCerts requires [Apache HttpClients](https://hc.apache.org/httpcomponents-cl
 
 # Download
 You can download an up to date pre-compiled version of this program here (Compiled with Java 8):
-https://build.germancoding.com/job/FritzCerts/lastSuccessfulBuild/artifact/target/FritzCerts-0.0.1-SNAPSHOT.jar
+https://build.germancoding.com/job/FritzCerts/lastSuccessfulBuild/artifact/target/FritzCerts-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 # Additional notes
 The program is not fully finished at the moment. There's no pretty status printing yet, instead full HTML pages are printed to the console. Additionally, password protected files should be supported and some other improvements are planed too.
