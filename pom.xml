@@ -46,6 +46,9 @@
 									</mainClass>
 								</manifest>
 							</archive>
+							<descriptorRefs>
+								<descriptorRef>dist</descriptorRef>
+							</descriptorRefs>
 						</configuration>
 					</execution>
 				</executions>
