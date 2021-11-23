@@ -38,7 +38,7 @@ If you do not use Maven:
 FritzCerts requires [Apache HttpClients](https://hc.apache.org/httpcomponents-client-ga/index.html) as well as [Apache HttpMime](https://hc.apache.org/httpcomponents-client-ga/httpmime/summary.html) in a recent version and Java 7 or higher to compile.
 
 # Download
-You can download an up to date pre-compiled version of this program here (Compiled with Java 8):
+You can download an up to date pre-compiled version of this program here (Compiled with Java 11):
 https://build.germancoding.com/job/FritzCerts/lastSuccessfulBuild/artifact/target/FritzCerts-0.0.1-SNAPSHOT-jar-with-dependencies.jar
 
 # Additional notes
