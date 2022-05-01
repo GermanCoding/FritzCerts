@@ -47,7 +47,7 @@ public class FritzBoxController {
 		if (domain.toLowerCase().startsWith("http")) {
 			URI uri = new URI(domain);
 			scheme = uri.getScheme() + "://";
-			domain = uri.getHost() + uri.getPath();
+			domain = uri.getHost() + ":" + uri.getPort() + uri.getPath();
 		}
 
 		if (domain.endsWith("/")) {
@@ -58,7 +58,7 @@ public class FritzBoxController {
 		this.username = username;
 		this.password = password;
 		this.sid = getNewSessionID();
-		if(this.sid.equalsIgnoreCase("0000000000000000")) {
+		if (this.sid.equalsIgnoreCase("0000000000000000")) {
 			System.out.println("Login failed. Username/password may be incorrect.");
 		}
 	}
