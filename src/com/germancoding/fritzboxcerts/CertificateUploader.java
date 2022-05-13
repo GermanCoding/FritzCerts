@@ -41,11 +41,22 @@ public class CertificateUploader {
 		CloseableHttpResponse response = controller.sendPost(post);
 		System.out.println(response.getStatusLine());
 		BufferedReader reader = new BufferedReader(new InputStreamReader(response.getEntity().getContent(), "UTF-8"));
+		String lines = "";
 		String line;
+		boolean success = false;
 		while ((line = reader.readLine()) != null) {
-			System.out.println(line);
+			lines += line + "\n";
+			if (line.toLowerCase().contains("erfolgreich importiert")) {
+				success = true;
+				System.out.println(line);
+			}
 		}
 		response.close();
+		if (!success) {
+			System.out.println(lines);
+			System.out.println("Failed to read success line, assuming failure!");
+			System.exit(1);
+		}
 	}
 
 	public static void main(String[] args) throws ParserConfigurationException, URISyntaxException, UnsupportedEncodingException, UnsupportedOperationException, IOException {
