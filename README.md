@@ -1,3 +1,6 @@
+# Compatibility Update
+Unfortunately, starting with Fritz!OS 7.50, this program does no longer work on repeaters, powerline etc products from AVM. This is due to internal redesigns, which removed the certificate upload support from the webinterface (the UI still supports HTTPS and uses the last configured certificate, but you cannot update it anymore). Until AVM re-adds this functionality (it currently unknown if or when this happens), this tool will not work anymore. It still works on FritzBox builds, but not the "lite" builds used for non-router devices.
+
 # FritzCerts
 Ever noticed that your Fritz!Box supports https? It does so out of the box (pun intended), but only with a self-signed certificate. Browsers do not trust this self-signed certificate, unless the user creates a specific exception. Users blindly proceeding are vulnerable to MITM attacks. To make it even worse, AVM products regenerate the cert everytime it's IP addresses changes - which can be daily. This makes it impossible to add sensible trust exceptions to the self-signed certificate.
 
